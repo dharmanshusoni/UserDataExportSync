@@ -9,7 +9,7 @@ namespace UserSync.Storage
 {
     public class CsvStorageService : IStorageService
     {
-        public async Task SaveAsync(IEnumerable<UserEntity> users, string path)
+        public async Task SaveAsync(IEnumerable<User> users, string path)
         {
             var sb = new StringBuilder();
             sb.AppendLine("FirstName,LastName,Email,SourceId");

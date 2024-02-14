@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UserSync.Entities;
 
-namespace UserSync.Storage
+namespace UserSync.Adapter
 {
-    public interface IStorageService
+    public interface IAdapter
     {
-        Task SaveAsync(IEnumerable<User> users, string path);
+        Task<List<User>> GetAllUsers();
     }
 }

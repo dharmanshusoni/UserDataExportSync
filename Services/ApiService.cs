@@ -19,7 +19,7 @@ namespace UserSync.Services
             _httpClient = new HttpClient();
         }
 
-        public async Task<IEnumerable<UserEntity>> FetchUsersAsync(string apiUrl, int sourceId)
+        public async Task<IEnumerable<User>> FetchUsersAsync(string apiUrl, int sourceId)
         {
             var response = await _httpClient.GetStringAsync(apiUrl);
             var data = JToken.Parse(response);
@@ -46,7 +46,7 @@ namespace UserSync.Services
                 parser = parsers["array"];
             }
 
-            return parser != null ? parser.Parse(data, sourceId) : Enumerable.Empty<UserEntity>();
+            return parser != null ? parser.Parse(data, sourceId) : Enumerable.Empty<User>();
         }
     }
 }

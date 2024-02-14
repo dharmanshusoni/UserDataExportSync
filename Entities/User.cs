@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UserSync.Entities
 {
-    public class UserEntity
+    public class User
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

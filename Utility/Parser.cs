@@ -10,16 +10,16 @@ namespace UserSync.Utility
 {
     public interface IUserParser
     {
-        IEnumerable<UserEntity> Parse(JToken data, int sourceId);
+        IEnumerable<User> Parse(JToken data, int sourceId);
     }
 
     public class DataKeyParser : IUserParser
     {
-        public IEnumerable<UserEntity> Parse(JToken data, int sourceId)
+        public IEnumerable<User> Parse(JToken data, int sourceId)
         {
             return data["data"].ToObject<List<JObject>>().Select(item =>
             {
-                return new UserEntity
+                return new User
                 {
                     FirstName = (string)item["first_name"],
                     LastName = (string)item["last_name"],
@@ -33,20 +33,20 @@ namespace UserSync.Utility
     // Parser for the 'users' key structure
     public class UsersKeyParser : IUserParser
     {
-        public IEnumerable<UserEntity> Parse(JToken data, int sourceId) =>
-            data["users"].ToObject<List<UserEntity>>().Select(user => { user.SourceId = sourceId; return user; });
+        public IEnumerable<User> Parse(JToken data, int sourceId) =>
+            data["users"].ToObject<List<User>>().Select(user => { user.SourceId = sourceId; return user; });
     }
 
     // Parser for the array structure
     public class ArrayParser : IUserParser
     {
-        public IEnumerable<UserEntity> Parse(JToken data, int sourceId)
+        public IEnumerable<User> Parse(JToken data, int sourceId)
         {
             return data.ToObject<List<JObject>>().Select(item =>
             {
                 var fullName = (string)item["name"];
                 var splitName = fullName.Split(new[] { ' ' }, 2);
-                return new UserEntity
+                return new User
                 {
                     FirstName = splitName.Length > 0 ? splitName[0] : "",
                     LastName = splitName.Length > 1 ? splitName[1] : "",
@@ -60,11 +60,11 @@ namespace UserSync.Utility
     // Parser for the 'results' key structure
     public class ResultsKeyParser : IUserParser
     {
-        public IEnumerable<UserEntity> Parse(JToken data, int sourceId)
+        public IEnumerable<User> Parse(JToken data, int sourceId)
         {
             return data["results"].ToObject<List<JObject>>().Select(item =>
             {
-                return new UserEntity
+                return new User
                 {
                     FirstName = (string)item["name"]["first"],
                     LastName = (string)item["name"]["last"],
