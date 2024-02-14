@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "M3aGkmhWRl5Y2M83DEKF/HRtJoiofibSX0Y1bs3ZUJKKQNE4TnXSIgydE+w29ode2DwJYv3eNZIJ4as5LvoeHQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dharm\\OneDrive\\Desktop\\UserSync\\UserSync.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dharm\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

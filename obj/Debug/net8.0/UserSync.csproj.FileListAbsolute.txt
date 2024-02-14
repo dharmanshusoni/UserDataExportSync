@@ -1,0 +1,17 @@
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\UserSync.exe
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\UserSync.deps.json
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\UserSync.runtimeconfig.json
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\UserSync.dll
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\UserSync.pdb
+C:\Users\dharm\OneDrive\Desktop\UserSync\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.csproj.AssemblyReference.cache
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.AssemblyInfoInputs.cache
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.AssemblyInfo.cs
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.csproj.CoreCompileInputs.cache
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.csproj.CopyComplete
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.dll
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\refint\UserSync.dll
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.pdb
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\UserSync.genruntimeconfig.cache
+C:\Users\dharm\OneDrive\Desktop\UserSync\obj\Debug\net8.0\ref\UserSync.dll
